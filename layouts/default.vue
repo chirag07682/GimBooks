@@ -52,37 +52,37 @@ export default {
         {
           icon: 'mdi-file',
           title: 'Invoice',
-          to: '/',
+          to: '/invoice/',
         },
         {
           icon: 'mdi-note-plus',
           title: 'Credit Note',
-          to: '/creditNote',
+          to: '/creditNote/',
         },
         {
           icon: 'mdi-note-minus',
           title: 'Debit Note',
-          to: '/debitNote',
+          to: '/debitNote/',
         },
         {
           icon: 'mdi-clipboard-account',
           title: 'Customers',
-          to: '/customers',
+          to: '/customers/',
         },
         {
           icon: 'mdi-calendar-text',
           title: 'Products',
-          to: '/products',
+          to: '/products/',
         },
         {
           icon: 'mdi-cash-multiple',
           title: 'Purchase',
-          to: '/purchase',
+          to: '/purchase/',
         },
         {
           icon: 'mdi-receipt',
           title: 'Quotations',
-          to: '/quotations',
+          to: '/quotations/',
         },
         {
           icon: 'mdi-logout',

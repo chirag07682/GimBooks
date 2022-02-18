@@ -17,7 +17,7 @@
           <v-btn
             style="background-color: rgba(0, 0, 0, 0.87)"
             class="white--text"
-            >Create Invoice</v-btn
+            >Create Purchase Invoice</v-btn
           >
         </v-card-title>
         <v-data-table
@@ -37,9 +37,10 @@ export default {
     return {
       search: '',
       headers: [
-        { text: 'Invoice Number' },
-        { text: 'Customer Name' },
-        { text: 'Invoice Date' },
+        { text: 'Purchase' },
+        { text: 'Purchase Date' },
+        { text: 'Purchase Type' },
+        { text: 'Seller Name' },
         { text: 'Amount' },
         { text: 'Action' },
       ],

@@ -17,7 +17,7 @@
           <v-btn
             style="background-color: rgba(0, 0, 0, 0.87)"
             class="white--text"
-            >Create Invoice</v-btn
+            >Create Quptations</v-btn
           >
         </v-card-title>
         <v-data-table

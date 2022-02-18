@@ -17,7 +17,7 @@
           <v-btn
             style="background-color: rgba(0, 0, 0, 0.87)"
             class="white--text"
-            >Create Invoice</v-btn
+            >Add Products</v-btn
           >
         </v-card-title>
         <v-data-table
@@ -37,11 +37,11 @@ export default {
     return {
       search: '',
       headers: [
-        { text: 'Customer Name' },
-        { text: 'Mobile No.' },
-        { text: 'VAT Registration No.' },
-        { text: 'Address' },
-        { text: 'City' },
+        { text: 'Product Name' },
+        { text: 'Rate' },
+        { text: 'Discount' },
+        { text: 'Tax' },
+        { text: 'VAT%' },
         { text: 'Action' },
       ],
       desserts: [],

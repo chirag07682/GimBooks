@@ -2,26 +2,27 @@
   <div class="Table">
     <v-banner elevation="1" outlined rounded sticky>
       <v-card>
-        <div class="col-lg-12 col-md-6 col-sm-6">
-          <v-card-title>
-            <v-text-field
-              v-model="search"
-              prepend-inner-icon="mdi-magnify"
-              label="Search"
-              hide-details
-              solo
-              class="searchBar"
-            ></v-text-field>
+        <v-card-title>
+          <v-text-field
+            v-model="search"
+            prepend-inner-icon="mdi-magnify"
+            label="Search"
+            hide-details
+            solo
+            class="searchBar"
+          ></v-text-field>
 
-            <v-spacer></v-spacer>
+          <v-spacer></v-spacer>
+          <v-col cols="10">
             <v-btn flat>Sort & Filter</v-btn>
             <v-btn
               style="background-color: rgba(0, 0, 0, 0.87)"
               class="white--text"
-              >Create Invoice</v-btn
+              :to="{ name: 'debitNote-create' }"
+              >Create Debit Note</v-btn
             >
-          </v-card-title>
-        </div>
+          </v-col>
+        </v-card-title>
         <v-data-table
           :headers="headers"
           :hide-default-footer="true"

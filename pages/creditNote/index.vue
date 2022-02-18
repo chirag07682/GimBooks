@@ -2,24 +2,27 @@
   <div class="Table">
     <v-banner elevation="1" outlined rounded sticky>
       <v-card>
-        <v-card-title>
-          <v-text-field
-            v-model="search"
-            prepend-inner-icon="mdi-magnify"
-            label="Search"
-            hide-details
-            solo
-            class="searchBar"
-          ></v-text-field>
+        <div class="col-lg-12 col-md-6 col-sm-6">
+          <v-card-title>
+            <v-text-field
+              v-model="search"
+              prepend-inner-icon="mdi-magnify"
+              label="Search"
+              hide-details
+              solo
+              class="searchBar"
+            ></v-text-field>
 
-          <v-spacer></v-spacer>
-          <v-btn flat>Sort & Filter</v-btn>
-          <v-btn
-            style="background-color: rgba(0, 0, 0, 0.87)"
-            class="white--text"
-            >Create Invoice</v-btn
-          >
-        </v-card-title>
+            <v-spacer></v-spacer>
+            <v-btn flat>Sort & Filter</v-btn>
+            <v-btn
+              style="background-color: rgba(0, 0, 0, 0.87)"
+              class="white--text"
+              :to="{ name: 'creditNote-create' }"
+              >Create Credit Note</v-btn
+            >
+          </v-card-title>
+        </div>
         <v-data-table
           :headers="headers"
           :hide-default-footer="true"
@@ -37,10 +40,9 @@ export default {
     return {
       search: '',
       headers: [
-        { text: 'Purchase' },
-        { text: 'Purchase Date' },
-        { text: 'Purchase Type' },
-        { text: 'Seller Name' },
+        { text: 'Invoice Number' },
+        { text: 'Customer Name' },
+        { text: 'Invoice Date' },
         { text: 'Amount' },
         { text: 'Action' },
       ],
